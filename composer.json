@@ -1,0 +1,29 @@
+{
+    "name": "gpaton/labelconverter-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony GpatonLabelConverterBundle",
+    "keywords": ["Label converter"],
+    "homepage": "http://gpaton.github.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guillaume Paton",
+            "homepage": "https://github.com/gpaton"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/framework-bundle": "~2.1",
+        "symfony/form": "~2.1"
+    },
+    "require-dev": {
+        "twig/twig": "~1.5",
+        "symfony/yaml": "~2.1",
+        "symfony/validator": "~2.1"
+    },
+    "autoload": {
+        "psr-0": { "Gpaton\\LabelConverterBundle": "" }
+    },
+    "target-dir": "Gpaton/LabelConverterBundle"
+}

@@ -1,0 +1,68 @@
+--TEST--
+"tolabel" filter
+--TEMPLATE--
+{{ 1|tolabel('ArabicNumeral') }}
+{{ 2|tolabel('ArabicNumeral') }}
+{{ 3|tolabel('ArabicNumeral') }}
+{{ 4|tolabel('ArabicNumeral') }}
+{{ 5|tolabel('ArabicNumeral') }}
+{{ 10|tolabel('ArabicNumeral') }}
+{{ 30|tolabel('ArabicNumeral') }}
+
+{{ 1|tolabel('CapitalLetter') }}
+{{ 2|tolabel('CapitalLetter') }}
+{{ 3|tolabel('CapitalLetter') }}
+{{ 4|tolabel('CapitalLetter') }}
+{{ 5|tolabel('CapitalLetter') }}
+{{ 10|tolabel('CapitalLetter') }}
+{{ 30|tolabel('CapitalLetter') }}
+
+{{ 1|tolabel('LowercaseLetter') }}
+{{ 2|tolabel('LowercaseLetter') }}
+{{ 3|tolabel('LowercaseLetter') }}
+{{ 4|tolabel('LowercaseLetter') }}
+{{ 5|tolabel('LowercaseLetter') }}
+{{ 10|tolabel('LowercaseLetter') }}
+{{ 30|tolabel('LowercaseLetter') }}
+
+{{ 1|tolabel('RomanNumeral') }}
+{{ 2|tolabel('RomanNumeral') }}
+{{ 3|tolabel('RomanNumeral') }}
+{{ 4|tolabel('RomanNumeral') }}
+{{ 5|tolabel('RomanNumeral') }}
+{{ 10|tolabel('RomanNumeral') }}
+{{ 30|tolabel('RomanNumeral') }}
+--DATA--
+return array()
+--EXPECT--
+1
+2
+3
+4
+5
+10
+30
+
+A
+B
+C
+D
+E
+J
+AD
+
+a
+b
+c
+d
+e
+j
+ad
+
+I
+II
+III
+IV
+V
+X
+XXX

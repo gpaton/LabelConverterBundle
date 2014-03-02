@@ -1,0 +1,18 @@
+services:
+    # Form field type to integrate in a form
+    form.type.labelconverter:
+        class: Gpaton\LabelConverterBundle\Form\Type\LabelConverterType
+        arguments:
+            - @translator
+        tags:
+            - { name: form.type, alias: gpaton_labelconverter }
+
+    # Factory to use label converter in a class which can load this service
+    gpaton.labelconverter.factory:
+        class: Gpaton\LabelConverterBundle\Model\LabelConverterFactory
+
+    # Twig extension to use label converter in a template
+    gpaton.twig.labelconverter_extension:
+        class: Gpaton\LabelConverterBundle\Twig\LabelConverterExtension
+        tags:
+            - { name: twig.extension }
