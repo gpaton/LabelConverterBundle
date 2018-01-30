@@ -4,7 +4,7 @@
     "description": "Symfony GpatonLabelConverterBundle",
     "keywords": ["Label converter"],
     "homepage": "http://gpaton.github.com",
-    "license": "GPL v2",
+    "license": "GPL-2.0-only",
     "authors": [
         {
             "name": "Guillaume Paton",
